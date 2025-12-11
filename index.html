@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Mini Calculatrice</h1>
+</header>
+
+<main>
+
+    <h2>Effectuer un calcul</h2>
+
+    <form>
+        <label>Nombre A :</label>
+        <input type="number" name="a" id="a">
+
+        <br><br>
+
+        <label>Nombre B :</label>
+        <input type="number" name="b" id="b">
+
+        <br><br>
+
+        <label>Opération :</label>
+        <select name="operation" id="operation">
+            <option value="+">Addition (+)</option>
+            <option value="-">Soustraction (-)</option>
+            <option value="*">Multiplication (x)</option>
+            <option value="/">Division (%)</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">Calculer</button>
+    </form>
+
+    
+    <section>
+        <h3>Messages d'erreurs</h3>
+        <div id="erreur"></div>
+    </section>
+
+    
+    <section>
+        <h3>Historique des opérations</h3>
+        <div id="historique"></div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© Projet Calculatrice</p>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
